@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JNViewController : UIViewController{
+@interface JNViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
     UIToolbar *tb;
     UILabel *titleLabel;
 }
@@ -16,5 +16,12 @@
 @property (nonatomic, retain) UILabel *titleLabel;
 
 -(void)connectWithNode;
+-(void)configure:(UITapGestureRecognizer*)tpg;
+
+
+// Misc setup
+-(void)setupBasicGUI;
+-(void)setupTableView;
+
 
 @end

@@ -18,6 +18,11 @@
 		4E0A320F15BC948700D8CB69 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A320D15BC948700D8CB69 /* bg@2x.jpg */; };
 		4E0A321A15BC9EBA00D8CB69 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A321915BC9EBA00D8CB69 /* GradientButton.m */; };
 		4E0A321C15BCA25E00D8CB69 /* cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A321B15BCA25E00D8CB69 /* cell_bg.png */; };
+		4E0A322115BCA57F00D8CB69 /* JNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A322015BCA57F00D8CB69 /* JNNode.m */; };
+		4E0A322715BCA70D00D8CB69 /* JNNodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A322615BCA70D00D8CB69 /* JNNodeCell.m */; };
+		4E0A322915BCA72B00D8CB69 /* JNNodeCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A322815BCA72B00D8CB69 /* JNNodeCellView.xib */; };
+		4E0A322C15BCAF8500D8CB69 /* JNNodeCellSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A322B15BCAF8500D8CB69 /* JNNodeCellSectionHeader.m */; };
+		4E0A323015BCB06A00D8CB69 /* section_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A322F15BCB06A00D8CB69 /* section_bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,14 @@
 		4E0A321815BC9EBA00D8CB69 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		4E0A321915BC9EBA00D8CB69 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		4E0A321B15BCA25E00D8CB69 /* cell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_bg.png; sourceTree = "<group>"; };
+		4E0A321F15BCA57F00D8CB69 /* JNNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNNode.h; sourceTree = "<group>"; };
+		4E0A322015BCA57F00D8CB69 /* JNNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNNode.m; sourceTree = "<group>"; };
+		4E0A322515BCA70D00D8CB69 /* JNNodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNNodeCell.h; sourceTree = "<group>"; };
+		4E0A322615BCA70D00D8CB69 /* JNNodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNNodeCell.m; sourceTree = "<group>"; };
+		4E0A322815BCA72B00D8CB69 /* JNNodeCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JNNodeCellView.xib; sourceTree = "<group>"; };
+		4E0A322A15BCAF8500D8CB69 /* JNNodeCellSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNNodeCellSectionHeader.h; sourceTree = "<group>"; };
+		4E0A322B15BCAF8500D8CB69 /* JNNodeCellSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNNodeCellSectionHeader.m; sourceTree = "<group>"; };
+		4E0A322F15BCB06A00D8CB69 /* section_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +97,13 @@
 		4E0A31F215BC93C300D8CB69 /* Jones */ = {
 			isa = PBXGroup;
 			children = (
+				4E0A322215BCA69D00D8CB69 /* Views */,
+				4E0A321E15BCA56300D8CB69 /* ViewControllers */,
+				4E0A321D15BCA55D00D8CB69 /* Models */,
 				4E0A321015BC9CB200D8CB69 /* Libs */,
 				4E0A320A15BC945C00D8CB69 /* Resources */,
 				4E0A31FB15BC93C300D8CB69 /* JNAppDelegate.h */,
 				4E0A31FC15BC93C300D8CB69 /* JNAppDelegate.m */,
-				4E0A31FE15BC93C300D8CB69 /* JNViewController.h */,
-				4E0A31FF15BC93C300D8CB69 /* JNViewController.m */,
 				4E0A31F315BC93C300D8CB69 /* Supporting Files */,
 			);
 			path = Jones;
@@ -118,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4E0A321B15BCA25E00D8CB69 /* cell_bg.png */,
+				4E0A322F15BCB06A00D8CB69 /* section_bg.png */,
 				4E0A320C15BC948700D8CB69 /* bg.jpg */,
 				4E0A320D15BC948700D8CB69 /* bg@2x.jpg */,
 			);
@@ -140,6 +155,36 @@
 				4E0A321915BC9EBA00D8CB69 /* GradientButton.m */,
 			);
 			name = GradientButton;
+			sourceTree = "<group>";
+		};
+		4E0A321D15BCA55D00D8CB69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E0A321F15BCA57F00D8CB69 /* JNNode.h */,
+				4E0A322015BCA57F00D8CB69 /* JNNode.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4E0A321E15BCA56300D8CB69 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E0A31FE15BC93C300D8CB69 /* JNViewController.h */,
+				4E0A31FF15BC93C300D8CB69 /* JNViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E0A322215BCA69D00D8CB69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E0A322515BCA70D00D8CB69 /* JNNodeCell.h */,
+				4E0A322615BCA70D00D8CB69 /* JNNodeCell.m */,
+				4E0A322815BCA72B00D8CB69 /* JNNodeCellView.xib */,
+				4E0A322A15BCAF8500D8CB69 /* JNNodeCellSectionHeader.h */,
+				4E0A322B15BCAF8500D8CB69 /* JNNodeCellSectionHeader.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +242,8 @@
 				4E0A320E15BC948700D8CB69 /* bg.jpg in Resources */,
 				4E0A320F15BC948700D8CB69 /* bg@2x.jpg in Resources */,
 				4E0A321C15BCA25E00D8CB69 /* cell_bg.png in Resources */,
+				4E0A322915BCA72B00D8CB69 /* JNNodeCellView.xib in Resources */,
+				4E0A323015BCB06A00D8CB69 /* section_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +258,9 @@
 				4E0A31FD15BC93C300D8CB69 /* JNAppDelegate.m in Sources */,
 				4E0A320015BC93C300D8CB69 /* JNViewController.m in Sources */,
 				4E0A321A15BC9EBA00D8CB69 /* GradientButton.m in Sources */,
+				4E0A322115BCA57F00D8CB69 /* JNNode.m in Sources */,
+				4E0A322715BCA70D00D8CB69 /* JNNodeCell.m in Sources */,
+				4E0A322C15BCAF8500D8CB69 /* JNNodeCellSectionHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
